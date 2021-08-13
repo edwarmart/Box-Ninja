@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Movea : MonoBehaviour
 {
+    float xValue = 0;
+    float yValue = 0.01f;
+
+    float zValue = 0;
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +20,6 @@ public class Movea : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(1,0,0);
+        transform.Translate(xValue,yValue,zValue);
     }
 }
